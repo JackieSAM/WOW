@@ -1,0 +1,1282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>WOW! Global — A Branding & Content Studio for Established Experts</title>
+<meta name="description" content="We help doctors, founders, lawyers, and legacy brand owners turn the authority they've already earned offline into a digital presence that brings the right opportunities to them." />
+<meta name="author" content="WOW! Global" />
+<meta property="og:title" content="WOW! Global — A Branding & Content Studio for Established Experts" />
+<meta property="og:description" content="Brand strategy. Content systems. Founder films. Built with AI. Crafted by humans who've done this for over a decade." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://res.cloudinary.com/dden4hawr/image/upload/v1780893081/download_rgsk6e.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://res.cloudinary.com/dden4hawr/image/upload/v1780893081/download_rgsk6e.jpg" />
+<link rel="icon" type="image/jpeg" href="https://res.cloudinary.com/dden4hawr/image/upload/v1780893081/download_rgsk6e.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "WOW! Global",
+  "url": "https://wowglobal.studio",
+  "logo": "https://res.cloudinary.com/dden4hawr/image/upload/v1780893081/download_rgsk6e.jpg",
+  "email": "hello@wowglobal.studio",
+  "description": "A branding & content studio for established experts."
+}
+</script>
+<style>
+  :root {
+    --navy-900:#08091c;
+    --navy-800:#0d1230;
+    --navy-700:#141a3e;
+    --navy-600:#1a1f4a;
+    --navy-500:#242a60;
+    --gold:#c9a84c;
+    --gold-light:#f5e6a8;
+    --ivory:#ece7d8;
+    --ivory-dim:#b9b4a4;
+    --line:rgba(201,168,76,.18);
+    --line-strong:rgba(201,168,76,.45);
+    --max:1240px;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--navy-900);color:var(--ivory);font-family:'Inter',system-ui,sans-serif;font-weight:300;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  body{background:
+    radial-gradient(1200px 800px at 80% -10%, rgba(201,168,76,.08), transparent 60%),
+    radial-gradient(900px 700px at -10% 30%, rgba(36,42,96,.6), transparent 70%),
+    linear-gradient(180deg, var(--navy-900), var(--navy-800) 40%, var(--navy-900));}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  ::selection{background:var(--gold);color:var(--navy-900)}
+
+  /* Grain overlay */
+  body::after{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.04;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/></svg>");
+  }
+
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 clamp(20px,4vw,48px)}
+
+  /* Type */
+  h1,h2,h3,h4{font-family:'Instrument Serif',serif;font-weight:400;letter-spacing:-.01em;line-height:1.04;color:var(--ivory)}
+  h1{font-size:clamp(2.6rem,6.4vw,5.6rem)}
+  h2{font-size:clamp(2rem,4.4vw,3.6rem)}
+  h3{font-size:clamp(1.4rem,2.2vw,1.85rem)}
+  .eyebrow{font-family:'Inter';font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:500}
+  .lead{font-size:clamp(1.05rem,1.4vw,1.25rem);color:var(--ivory-dim);max-width:60ch}
+  .italic{font-style:italic;color:var(--gold-light)}
+  .num{font-family:'Instrument Serif',serif;font-style:italic;color:var(--gold);font-size:1.15rem;letter-spacing:.04em}
+
+  /* Buttons */
+  .btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.5rem;border-radius:999px;font-size:.92rem;letter-spacing:.02em;font-weight:500;border:1px solid var(--line-strong);transition:all .35s cubic-bezier(.2,.7,.2,1);will-change:transform;cursor:pointer}
+  .btn .arrow{transition:transform .35s ease}
+  .btn:hover .arrow{transform:translateX(4px)}
+  .btn-primary{background:var(--gold);color:var(--navy-900);border-color:var(--gold)}
+  .btn-primary:hover{background:var(--gold-light);border-color:var(--gold-light);box-shadow:0 10px 40px -10px rgba(201,168,76,.6)}
+  .btn-ghost{background:transparent;color:var(--ivory)}
+  .btn-ghost:hover{background:rgba(201,168,76,.08);border-color:var(--gold)}
+
+  /* Nav */
+  nav.top{position:fixed;top:0;left:0;right:0;z-index:50;padding:18px 0;background:rgba(8,9,28,.78);border-bottom:1px solid transparent;transition:border-color .3s,background .3s}
+  nav.top.scrolled{border-color:var(--line);background:rgba(8,9,28,.78)}
+  nav.top .inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
+  .brand{display:flex;align-items:center;gap:12px;font-family:'Instrument Serif';font-size:1.2rem;letter-spacing:.01em}
+  .brand img{width:34px;height:34px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 1px var(--line-strong),0 0 24px -6px rgba(201,168,76,.4)}
+  .brand b{font-weight:400}
+  .brand .accent{color:var(--gold)}
+  .nav-links{display:flex;align-items:center;gap:34px}
+  .nav-links a{font-size:.86rem;color:var(--ivory-dim);position:relative;padding:6px 0;transition:color .2s}
+  .nav-links a:not(.cta):hover{color:var(--ivory)}
+  .nav-links a:not(.cta)::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:transform .35s ease}
+  .nav-links a:not(.cta):hover::after{transform:scaleX(1);transform-origin:left}
+  .nav-links a.cta{padding:.6rem 1.1rem;border:1px solid var(--gold);border-radius:999px;color:var(--gold);font-size:.82rem}
+  .nav-links a.cta:hover{background:var(--gold);color:var(--navy-900)}
+  .nav-toggle{display:none;background:none;border:1px solid var(--line);color:var(--ivory);padding:8px 12px;border-radius:8px;cursor:pointer;font-size:.78rem;letter-spacing:.1em}
+
+  @media (max-width:860px){
+    .nav-links{position:fixed;inset:64px 16px auto 16px;flex-direction:column;align-items:stretch;gap:0;background:rgba(8,9,28,.96);border:1px solid var(--line);border-radius:18px;padding:18px;backdrop-filter:blur(20px);transform:translateY(-12px) scale(.98);opacity:0;pointer-events:none;transition:all .3s}
+    .nav-links.open{transform:translateY(0) scale(1);opacity:1;pointer-events:auto}
+    .nav-links a{padding:14px 6px;border-bottom:1px solid var(--line)}
+    .nav-links a:last-child{border:none;margin-top:8px;text-align:center}
+    .nav-toggle{display:inline-flex}
+  }
+
+  /* Sections */
+  section{position:relative;padding:clamp(80px,11vh,140px) 0;z-index:2}
+  .label-row{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+  .label-row .line{flex:0 0 48px;height:1px;background:var(--gold);opacity:.55}
+
+  /* ============ 3D STAGE ============
+     The hero canvas is fixed to the viewport and stays visible across
+     Hero → Problem → Approach. Content keeps to one column so the 3D
+     object is always exposed alongside it. */
+  #hero-canvas{
+    position:fixed;inset:0;width:100vw;height:100vh;z-index:1;
+    pointer-events:none;will-change:opacity,transform;
+    transition:opacity .5s ease;
+  }
+  /* Allow direct interaction with the 3D object on devices with a fine pointer.
+     Wheel events still bubble to Lenis so scrolling continues to work. */
+  @media (hover:hover) and (pointer:fine){
+    #hero-canvas{pointer-events:auto;cursor:grab}
+    #hero-canvas.dragging{cursor:grabbing}
+  }
+  body.stage-done #hero-canvas{opacity:0;pointer-events:none}
+  /* Hint chip near hero */
+  .drag-hint{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:4;font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);background:rgba(8,9,28,.55);backdrop-filter:blur(10px);padding:8px 14px;border:1px solid var(--line-strong);border-radius:999px;pointer-events:none;opacity:0;transition:opacity .5s ease}
+  body.show-drag-hint .drag-hint{opacity:.85}
+  body.stage-done .drag-hint{opacity:0}
+
+  /* HERO */
+  #hero{min-height:100vh;display:flex;align-items:center;padding-top:140px;padding-bottom:80px;overflow:visible}
+  #hero .wrap{position:relative;z-index:2}
+  .hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:40px;align-items:center}
+  .hero-col{max-width:620px;text-align:left}
+  @media (max-width:880px){.hero-grid{grid-template-columns:minmax(0,1fr)}}
+  .hero-tag{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border:1px solid var(--line-strong);border-radius:999px;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);background:rgba(8,9,28,.4);backdrop-filter:blur(6px)}
+  .hero-tag::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px var(--gold)}
+  .hero h1{margin:26px 0 28px;max-width:18ch}
+  .hero h1 .italic{display:inline-block}
+  .hero-sub{font-size:clamp(1.08rem,1.5vw,1.35rem);color:var(--ivory);max-width:54ch;margin-bottom:14px;line-height:1.5}
+  .hero-body{color:var(--ivory-dim);max-width:52ch;margin-bottom:38px}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:14px}
+  .hero-scroll{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);font-size:.7rem;letter-spacing:.3em;color:var(--ivory-dim);text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:10px;z-index:3}
+  .hero-scroll .bar{width:1px;height:36px;background:linear-gradient(var(--gold),transparent);animation:dropline 2.2s ease-in-out infinite}
+  @keyframes dropline{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+  /* Trust strip — INVERTED contrast band (ivory on light) */
+  #trust{padding:88px 0;position:relative;z-index:3;background:
+    radial-gradient(900px 400px at 20% 0%, rgba(201,168,76,.22), transparent 60%),
+    radial-gradient(700px 500px at 90% 100%, rgba(245,230,168,.18), transparent 60%),
+    linear-gradient(180deg,#f3eedb,#ece7d8 55%,#ddd5bd);
+    color:var(--navy-900);border-top:1px solid rgba(8,9,28,.08);border-bottom:1px solid rgba(8,9,28,.08);box-shadow:inset 0 1px 0 rgba(255,255,255,.4),0 30px 80px -30px rgba(0,0,0,.5)}
+  #trust::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(8,9,28,.07) 1px,transparent 1px);background-size:24px 24px;mask-image:linear-gradient(180deg,transparent,#000 30%,#000 70%,transparent);pointer-events:none}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;align-items:end;position:relative}
+  .stat{position:relative;padding:6px 4px}
+  .stat .v{font-family:'Instrument Serif';font-size:clamp(3rem,6vw,5.4rem);background:linear-gradient(180deg,#1a1f4a 0%,#403a1c 100%);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1;font-style:italic}
+  .stat .l{font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(8,9,28,.65);margin-top:14px;font-weight:500}
+  .stat::after{content:"";position:absolute;left:0;right:0;bottom:-22px;height:1px;background:linear-gradient(90deg,transparent,rgba(8,9,28,.35),transparent);transform:scaleX(0);transform-origin:left;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+  .stat.in::after{transform:scaleX(1)}
+  .industries{margin-top:54px;padding-top:28px;border-top:1px dashed rgba(8,9,28,.18);font-size:.82rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(8,9,28,.55);text-align:center;position:relative}
+  @media (max-width:720px){.stats{grid-template-columns:1fr;gap:36px;text-align:center}}
+
+  /* Problem — sticky cascading cards on left, 3D stays visible on right */
+  #problem .stage-col{max-width:min(560px,52%)}
+  .pain-grid{margin-top:60px;display:flex;flex-direction:column;gap:28vh;padding-bottom:30vh}
+  .pain{position:sticky;top:120px;background:linear-gradient(180deg,rgba(13,18,48,.85),rgba(8,9,28,.78));backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:22px;padding:38px 32px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6),inset 0 0 0 1px rgba(201,168,76,.04)}
+  .pain .num{display:block;margin-bottom:18px}
+  .pain h3{margin-bottom:14px;color:var(--ivory)}
+  .pain p{color:var(--ivory-dim);font-size:.96rem}
+  .closing{margin-top:48px;font-family:'Instrument Serif';font-style:italic;font-size:clamp(1.6rem,3vw,2.4rem);color:var(--gold-light);text-align:center;max-width:30ch;margin-left:auto;margin-right:auto}
+  @media (max-width:880px){
+    #problem .stage-col{max-width:100%}
+    .pain-grid{gap:18vh;padding-bottom:10vh}
+    .pain{position:relative;top:auto}
+  }
+
+  /* Approach — content on right, 3D drifts to left */
+  #approach .stage-col{max-width:min(580px,54%);margin-left:auto}
+  .pillars{display:flex;flex-direction:column;gap:24px;margin-top:50px}
+  .pillar{padding:42px 34px;background:linear-gradient(180deg,rgba(36,42,96,.55),rgba(13,18,48,.7));backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:24px;position:relative;overflow:hidden}
+  .pillar::before{content:"";position:absolute;inset:0;background:radial-gradient(600px 200px at 50% -10%,rgba(201,168,76,.18),transparent 70%);pointer-events:none}
+  .pillar .label{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+  .pillar h3{font-size:clamp(1.7rem,2.4vw,2.3rem);margin-bottom:18px}
+  .pillar p{color:var(--ivory-dim);margin-bottom:24px}
+  .pillar ul{list-style:none;padding:0;border-top:1px solid var(--line);margin-top:6px}
+  .pillar li{padding:14px 0;border-bottom:1px solid var(--line);font-size:.9rem;color:var(--ivory);display:flex;align-items:center;gap:12px}
+  .pillar li::before{content:"";width:4px;height:4px;border-radius:50%;background:var(--gold)}
+  .pillar .num{position:absolute;top:24px;right:32px;font-size:1.4rem}
+  .pillar > *{position:relative;z-index:1}
+  .mini-canvas{display:none}
+  @media (max-width:880px){#approach .stage-col{max-width:100%}}
+
+  /* Sections after the 3D stage get a solid backdrop */
+  #services,#results,#founder,#faq,#contact,footer{background:var(--navy-900);position:relative;z-index:2}
+
+  /* Services */
+  .services{margin-top:56px;border-top:1px solid var(--line)}
+  .svc{border-bottom:1px solid var(--line);padding:32px 0;cursor:pointer;position:relative;transition:background .35s}
+  .svc:hover{background:rgba(201,168,76,.04)}
+  .svc-head{display:grid;grid-template-columns:60px 1fr auto;gap:24px;align-items:start}
+  .svc-head .num{padding-top:4px}
+  .svc-head h3{font-size:clamp(1.4rem,2.3vw,2rem);transition:color .3s}
+  .svc:hover .svc-head h3{color:var(--gold-light)}
+  .svc-head .sub{color:var(--ivory-dim);font-size:.95rem;margin-top:8px;max-width:60ch}
+  .svc-toggle{width:36px;height:36px;border-radius:50%;border:1px solid var(--line-strong);display:flex;align-items:center;justify-content:center;color:var(--gold);transition:all .3s;flex-shrink:0;margin-top:6px}
+  .svc.open .svc-toggle{background:var(--gold);color:var(--navy-900);transform:rotate(45deg)}
+  .svc-body{max-height:0;overflow:hidden;transition:max-height .55s cubic-bezier(.2,.7,.2,1);padding-left:84px}
+  .svc.open .svc-body{max-height:600px}
+  .svc-body-inner{padding:24px 0 12px;display:grid;grid-template-columns:1fr;gap:22px}
+  .svc-body p{color:var(--ivory-dim);max-width:70ch}
+  .svc-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding-top:22px;border-top:1px dashed var(--line)}
+  .svc-meta .k{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+  .svc-meta .v{color:var(--ivory);font-size:.9rem;line-height:1.5}
+  .pre-cta{margin-top:42px;color:var(--ivory-dim);font-style:italic;text-align:center;max-width:60ch;margin-left:auto;margin-right:auto}
+  @media (max-width:720px){.svc-head{grid-template-columns:40px 1fr 36px;gap:14px}.svc-body{padding-left:54px}.svc-meta{grid-template-columns:1fr}}
+
+  /* Results */
+  #results{padding-bottom:0}
+  .cases-track{display:flex;gap:24px;padding:60px 0 80px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+  .cases-track::-webkit-scrollbar{display:none}
+  .case{flex:0 0 min(86vw,520px);scroll-snap-align:center;background:linear-gradient(180deg,rgba(36,42,96,.5),rgba(8,9,28,.3));border:1px solid var(--line);border-radius:24px;padding:36px;display:flex;flex-direction:column;gap:18px;min-height:380px;position:relative;overflow:hidden;transition:transform .4s,border-color .4s}
+  .case:hover{transform:translateY(-6px);border-color:var(--line-strong)}
+  .case::before{content:"";position:absolute;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,.2),transparent 70%);top:-80px;right:-80px}
+  .case .client{font-family:'Instrument Serif';font-size:1.5rem;color:var(--gold-light);position:relative}
+  .case .services{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+  .case h3{font-size:1.4rem;line-height:1.25}
+  .case p{color:var(--ivory-dim);font-size:.92rem;margin-top:auto}
+  .case .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .case .tag{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;padding:6px 12px;border:1px solid var(--gold);color:var(--gold);border-radius:999px}
+
+  /* Founder */
+  .founder-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;margin-top:50px;align-items:start}
+  .founder-portrait{aspect-ratio:4/5;border-radius:20px;background:
+    linear-gradient(180deg,rgba(201,168,76,.18),rgba(8,9,28,.4)),
+    radial-gradient(circle at 50% 35%,rgba(245,230,168,.3),transparent 50%),
+    var(--navy-700);
+    border:1px solid var(--line-strong);position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:32px}
+  .founder-portrait::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(8,9,28,.85) 100%);z-index:1;pointer-events:none}
+  .founder-portrait .portrait-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;z-index:0;filter:saturate(.95) contrast(1.05)}
+  .founder-portrait .name-card{position:relative;z-index:2}
+  .founder-portrait .name-card .n{font-family:'Instrument Serif';font-size:1.6rem;color:var(--ivory)}
+  .founder-portrait .name-card .r{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-top:6px}
+  .founder-bio p{color:var(--ivory-dim);margin-bottom:22px}
+  .quote{border-left:2px solid var(--gold);padding:14px 0 14px 22px;margin:28px 0;font-family:'Instrument Serif';font-style:italic;font-size:1.25rem;color:var(--gold-light)}
+  .creds{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
+  .cred{padding:14px 16px;border:1px solid var(--line);border-radius:12px}
+  .cred .t{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+  .cred .d{font-size:.86rem;color:var(--ivory)}
+  .offer{margin-top:36px;padding:28px;border:1px solid var(--gold);border-radius:18px;background:rgba(201,168,76,.05)}
+  .offer .name{font-family:'Instrument Serif';font-size:1.4rem;color:var(--gold-light);margin-bottom:10px}
+  .offer p{color:var(--ivory-dim);font-size:.92rem;margin-bottom:18px}
+  @media (max-width:880px){.founder-grid{grid-template-columns:1fr;gap:40px}.founder-portrait{max-width:380px}}
+
+  /* FAQ */
+  .faq{border-top:1px solid var(--line);margin-top:50px}
+  .faq-item{border-bottom:1px solid var(--line);padding:24px 0;cursor:pointer}
+  .faq-q{display:flex;align-items:center;justify-content:space-between;gap:20px;font-family:'Instrument Serif';font-size:clamp(1.1rem,1.8vw,1.5rem);color:var(--ivory);transition:color .3s}
+  .faq-item:hover .faq-q{color:var(--gold-light)}
+  .faq-q .ico{width:32px;height:32px;border-radius:50%;border:1px solid var(--line-strong);display:flex;align-items:center;justify-content:center;color:var(--gold);flex-shrink:0;transition:all .3s;position:relative}
+  .faq-q .ico::before,.faq-q .ico::after{content:"";position:absolute;background:currentColor}
+  .faq-q .ico::before{width:12px;height:1px}
+  .faq-q .ico::after{width:1px;height:12px;transition:transform .3s}
+  .faq-item.open .ico{background:var(--gold);color:var(--navy-900)}
+  .faq-item.open .ico::after{transform:scaleY(0)}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .5s ease}
+  .faq-item.open .faq-a{max-height:300px}
+  .faq-a p{padding:18px 52px 4px 0;color:var(--ivory-dim);max-width:75ch}
+
+  /* Contact */
+  #contact{text-align:center;padding:140px 0}
+  #contact .eyebrow{margin-bottom:24px;display:inline-block}
+  #contact h2{max-width:22ch;margin:0 auto 26px}
+  #contact .lead{margin:0 auto 38px}
+  #contact .note{margin-top:30px;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+
+  /* Footer */
+  footer{padding:60px 0 40px;border-top:1px solid var(--line);background:rgba(8,9,28,.6)}
+  .foot{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+  .foot-links{display:flex;gap:24px;font-size:.84rem;color:var(--ivory-dim)}
+  .foot-links a:hover{color:var(--gold)}
+  .copyright{margin-top:30px;font-size:.74rem;color:var(--ivory-dim);letter-spacing:.12em;text-align:center;padding-top:22px;border-top:1px solid var(--line)}
+  .copyright .tag{display:block;margin-top:8px;color:var(--gold);font-style:italic;font-family:'Instrument Serif';letter-spacing:0;font-size:.95rem}
+
+  /* Reveal init */
+  [data-reveal]{opacity:0;transform:translateY(28px)}
+  [data-reveal-clip]{clip-path:inset(0 0 100% 0);opacity:0}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none!important;transition:none!important}
+    [data-reveal],[data-reveal-clip]{opacity:1;transform:none;clip-path:none}
+  }
+
+  /* ====== Premium micro-interactions & contrast layers ====== */
+
+  /* Custom cursor (fine pointer only) */
+  .cursor-dot,.cursor-ring{position:fixed;top:0;left:0;pointer-events:none;z-index:9999;border-radius:50%;mix-blend-mode:difference}
+  .cursor-dot{width:6px;height:6px;background:var(--gold-light);transform:translate(-50%,-50%)}
+  .cursor-ring{width:38px;height:38px;border:1px solid rgba(245,230,168,.7);transform:translate(-50%,-50%);transition:width .25s ease,height .25s ease,opacity .25s ease}
+  .cursor-ring.hover{width:64px;height:64px;border-color:var(--gold)}
+  @media (hover:none),(pointer:coarse){.cursor-dot,.cursor-ring{display:none}}
+  html.has-cursor *{cursor:none!important}
+
+  /* Pillar = spotlight follow */
+  .pillar{--mx:50%;--my:0%}
+  .pillar::after{content:"";position:absolute;inset:0;border-radius:24px;background:radial-gradient(420px 260px at var(--mx) var(--my), rgba(245,230,168,.18), transparent 65%);opacity:0;transition:opacity .4s ease;pointer-events:none;z-index:0}
+  .pillar:hover::after{opacity:1}
+  .pillar{transition:transform .5s cubic-bezier(.2,.7,.2,1),border-color .4s}
+  .pillar:hover{transform:translateY(-4px);border-color:var(--line-strong)}
+
+  /* Case card sheen + tilt prep */
+  .case{transform-style:preserve-3d;will-change:transform}
+  .case::after{content:"";position:absolute;inset:0;border-radius:24px;background:linear-gradient(115deg,transparent 35%,rgba(245,230,168,.18) 50%,transparent 65%);transform:translateX(-120%);transition:transform .9s cubic-bezier(.2,.7,.2,1);pointer-events:none}
+  .case:hover::after{transform:translateX(120%)}
+
+  /* Services — alternating row tint + caret animation */
+  .svc:nth-child(even){background:linear-gradient(90deg,rgba(201,168,76,.03),rgba(201,168,76,0))}
+  .svc::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--gold);transform:scaleY(0);transform-origin:top;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+  .svc:hover::before,.svc.open::before{transform:scaleY(1)}
+  .svc.open{background:linear-gradient(90deg,rgba(201,168,76,.08),rgba(201,168,76,.02))}
+
+  /* Marquee industries (replaces static row visually) */
+  .marquee{overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+  .marquee-track{display:flex;gap:48px;width:max-content;animation:slide 38s linear infinite}
+  .marquee-track span{display:inline-flex;align-items:center;gap:48px;font-family:'Instrument Serif';font-style:italic;font-size:1.2rem;color:rgba(8,9,28,.55);white-space:nowrap}
+  .marquee-track span::after{content:"✦";color:var(--gold);font-style:normal;font-size:.8rem}
+  @keyframes slide{to{transform:translateX(-50%)}}
+
+  /* Founder — contrast inversion */
+  #founder{background:
+    radial-gradient(700px 500px at 15% 0%, rgba(201,168,76,.10), transparent 60%),
+    linear-gradient(180deg,#0d1230 0%, #08091c 80%);
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .founder-portrait{transform:perspective(1000px) rotateY(-3deg) rotateX(2deg);transition:transform .8s cubic-bezier(.2,.7,.2,1);box-shadow:0 50px 90px -40px rgba(0,0,0,.7),0 0 0 1px var(--line-strong)}
+  .founder-portrait:hover{transform:perspective(1000px) rotateY(0) rotateX(0) translateY(-6px)}
+
+  /* CTA contact — gradient ring */
+  #contact{background:
+    radial-gradient(1000px 500px at 50% 100%, rgba(201,168,76,.18), transparent 65%),
+    linear-gradient(180deg,#08091c,#0d1230);
+    overflow:hidden;position:relative}
+  #contact::before{content:"";position:absolute;width:140%;left:-20%;top:50%;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.4}
+  #contact h2{position:relative;z-index:1}
+
+  /* Service toggle pulse */
+  .svc-toggle{transition:all .35s cubic-bezier(.2,.7,.2,1)}
+  .svc:hover .svc-toggle{border-color:var(--gold);box-shadow:0 0 24px -4px rgba(201,168,76,.5)}
+
+  /* Hero scroll cue tweak — push below drag hint */
+  .hero-scroll{bottom:64px}
+
+  /* Reduce motion */
+  @media (prefers-reduced-motion: reduce){
+    .marquee-track{animation:none}
+    .cursor-dot,.cursor-ring{display:none}
+    html.has-cursor *{cursor:auto!important}
+  }
+
+  /* ===== SPLIT REVEAL — container expand → split → 3D flip ===== */
+  #split{position:relative;padding:0;background:#04050f;z-index:6}
+  .split-host{position:relative;height:500vh}
+  .split-pin{position:sticky;top:0;height:100vh;width:100%;overflow:hidden;background:#04050f;display:flex;align-items:center;justify-content:center;contain:layout paint;isolation:isolate}
+  .split-eyebrow-row{position:absolute;left:0;right:0;top:8vh;display:flex;flex-direction:column;align-items:center;gap:14px;z-index:4;text-align:center;padding:0 24px;opacity:0;transform:translateY(-30px);will-change:opacity,transform}
+  .split-eyebrow-row .eyebrow{display:inline-flex;align-items:center;gap:14px;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
+  .split-eyebrow-row .eyebrow::before,.split-eyebrow-row .eyebrow::after{content:"";width:28px;height:1px;background:var(--gold);opacity:.7}
+  .split-eyebrow-row h2{font-family:'Instrument Serif';font-size:clamp(1.8rem,4vw,3rem);max-width:22ch;color:var(--ivory);line-height:1.06}
+  .split-eyebrow-row h2 .italic{color:var(--gold-light);font-style:italic}
+  .card-container{position:relative;display:flex;align-items:stretch;justify-content:center;gap:0;width:30vw;height:min(62vh,620px);perspective:2200px;perspective-origin:50% 30%;will-change:width,gap}
+  .split-card{flex:1 1 0;position:relative;transform-style:preserve-3d;transform-origin:center top;border-radius:0;will-change:transform,border-radius;min-width:0}
+  .split-card:nth-child(1){border-radius:16px 0 0 16px}
+  .split-card:nth-child(3){border-radius:0 16px 16px 0}
+  .card-front,.card-back{position:absolute;inset:0;border-radius:inherit;overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden;box-shadow:0 40px 90px -30px rgba(0,0,0,.85),0 0 0 1px rgba(245,230,168,.10)}
+  .card-front{transform:rotateY(0deg)}
+  .card-back{transform:rotateY(180deg);background:linear-gradient(180deg,#0d1230 0%,#08091c 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:32px 26px 30px}
+  .split-card:nth-child(1) .card-back{border-top:2px solid #8ab4f8}
+  .split-card:nth-child(2) .card-back{border-top:2px solid #c9a84c}
+  .split-card:nth-child(3) .card-back{border-top:2px solid #f5a07a}
+  .card-front .card-img{display:block;position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;-webkit-user-drag:none;user-select:none}
+  .card-tint,.card-grad{position:absolute;inset:0;pointer-events:none}
+  .card-grad{background:linear-gradient(180deg,transparent 40%,rgba(4,5,15,.85) 100%)}
+  .split-card:nth-child(1) .card-tint{background:linear-gradient(160deg,rgba(10,30,90,.55) 0%,transparent 65%)}
+  .split-card:nth-child(2) .card-tint{background:linear-gradient(160deg,rgba(50,38,4,.45) 0%,transparent 65%)}
+  .split-card:nth-child(3) .card-tint{background:linear-gradient(160deg,rgba(80,10,8,.55) 0%,transparent 65%)}
+  .card-content{display:flex;flex-direction:column;gap:10px}
+  .card-eyebrow{font-size:.64rem;letter-spacing:.3em;text-transform:uppercase;font-weight:500;display:inline-flex;align-items:center;gap:8px}
+  .split-card:nth-child(1) .card-eyebrow{color:#8ab4f8}
+  .split-card:nth-child(2) .card-eyebrow{color:#c9a84c}
+  .split-card:nth-child(3) .card-eyebrow{color:#f5a07a}
+  .card-eyebrow::before{content:"";flex-shrink:0;width:18px;height:1px;opacity:.75;background:currentColor}
+  .card-title{font-family:'Instrument Serif';font-size:clamp(1.1rem,1.7vw,1.5rem);color:var(--ivory);line-height:1.15}
+  .card-body{font-size:clamp(.78rem,.88vw,.9rem);color:var(--ivory-dim);line-height:1.55}
+  .card-pill{display:inline-flex;align-items:center;margin-top:6px;padding:5px 13px;border-radius:999px;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500;width:fit-content}
+  .split-card:nth-child(1) .card-pill{background:rgba(138,180,248,.12);border:1px solid rgba(138,180,248,.45);color:#8ab4f8}
+  .split-card:nth-child(2) .card-pill{background:rgba(201,168,76,.10);border:1px solid rgba(201,168,76,.55);color:#c9a84c}
+  .split-card:nth-child(3) .card-pill{background:rgba(245,160,122,.10);border:1px solid rgba(245,160,122,.45);color:#f5a07a}
+  .split-content{position:absolute;left:0;right:0;bottom:5vh;display:flex;flex-direction:column;align-items:center;gap:16px;z-index:4;padding:0 24px;text-align:center;opacity:.85}
+  .split-content p{color:var(--ivory-dim);max-width:54ch;font-size:clamp(.94rem,1.15vw,1.05rem)}
+  .split-meta{display:flex;gap:28px;flex-wrap:wrap;justify-content:center;font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
+  .split-meta span{display:inline-flex;align-items:center;gap:9px}
+  .split-meta span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold);animation:metaPulse 2.4s ease-in-out infinite}
+  .split-meta span:nth-child(2)::before{animation-delay:.4s}
+  .split-meta span:nth-child(3)::before{animation-delay:.8s}
+  @keyframes metaPulse{0%,100%{box-shadow:0 0 10px var(--gold);transform:scale(1)}50%{box-shadow:0 0 20px var(--gold-light);transform:scale(1.3)}}
+  .split-progress{position:absolute;left:50%;bottom:20px;transform:translateX(-50%);width:140px;height:2px;background:rgba(245,230,168,.12);border-radius:2px;overflow:hidden;z-index:5}
+  .split-progress > span{display:block;height:100%;width:0%;background:linear-gradient(90deg,var(--gold),var(--gold-light));box-shadow:0 0 12px rgba(201,168,76,.7)}
+  @media (max-width:720px){
+    .split-host{height:auto}
+    .split-pin{position:relative;height:auto;padding:80px 0 60px;flex-direction:column;gap:24px}
+    .split-eyebrow-row{position:relative;opacity:1;transform:none;top:auto;padding:0 24px}
+    .card-container{flex-direction:column;width:90vw;height:auto;gap:16px;perspective:none}
+    .split-card{height:60vh;transform:none!important;border-radius:16px!important}
+    .card-back{display:none}
+    .split-content{position:relative;opacity:1;transform:none;bottom:auto;padding:0 24px}
+    .split-progress{display:none}
+  }
+  @property --ang{syntax:"<angle>";inherits:false;initial-value:0deg}
+</style>
+</head>
+<body>
+
+<nav class="top" id="nav">
+  <div class="wrap inner">
+    <a href="#hero" class="brand">
+      <img src="https://res.cloudinary.com/dden4hawr/image/upload/v1780893081/download_rgsk6e.jpg" alt="WOW! Global logo" />
+      <span><b>WOW!</b> <span class="accent">Global</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">MENU</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#approach">How We Work</a>
+      <a href="#services">What We Do</a>
+      <a href="#results">Results</a>
+      <a href="#founder">About</a>
+      <a href="#contact" class="cta">Let's Talk</a>
+    </div>
+  </div>
+</nav>
+
+<canvas id="hero-canvas"></canvas>
+<div class="drag-hint">Drag · Click · Explore</div>
+<div class="cursor-ring"></div>
+<div class="cursor-dot"></div>
+
+<section id="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-col">
+        <span class="hero-tag" data-reveal>A Branding &amp; Content Studio for Established Experts</span>
+        <h1 data-reveal-clip>You've built your reputation offline.<br/><span class="italic">Now let's build it online.</span></h1>
+        <p class="hero-sub" data-reveal>For over a decade, we've quietly built brands that move people. Now, we build brands that move at the speed of AI — without losing the thing that made them worth building in the first place.</p>
+        <p class="hero-body" data-reveal>Brand strategy. Content systems. Founder films. Built with AI. Crafted by humans who've done this for over a decade.</p>
+        <div class="hero-ctas" data-reveal>
+          <a href="#contact" class="btn btn-primary">Book a Discovery Call <span class="arrow">→</span></a>
+          <a href="#results" class="btn btn-ghost">See Client Results</a>
+      </div>
+      <div class="hero-spacer" aria-hidden="true"></div>
+    </div>
+    </div>
+  </div>
+  <div class="hero-scroll"><span>Scroll</span><span class="bar"></span></div>
+</section>
+
+<section id="trust">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat" data-reveal><div class="v"><span data-count="10" data-suffix="M+">0</span></div><div class="l">Views Generated</div></div>
+      <div class="stat" data-reveal><div class="v"><span data-count="50" data-suffix="+">0</span></div><div class="l">Brands Built</div></div>
+      <div class="stat" data-reveal><div class="v"><span data-count="12" data-suffix="+">0</span></div><div class="l">Years in the Craft</div></div>
+    </div>
+    <div class="industries marquee" data-reveal aria-hidden="true">
+      <div class="marquee-track" id="mqTrack"></div>
+    </div>
+  </div>
+</section>
+
+<section id="split" aria-label="From one voice into many">
+  <div class="split-host">
+    <div class="split-pin">
+      <div class="split-eyebrow-row">
+        <span class="eyebrow">From one voice — into many</span>
+        <h2>One conversation. <span class="italic">A month of presence.</span></h2>
+      </div>
+      <div class="card-container" id="cardContainer">
+        <div class="split-card" id="splitCard1">
+          <div class="card-front">
+            <img class="card-img" src="https://res.cloudinary.com/dden4hawr/image/upload/v1780897622/First_Card_gomvgq.png" alt="" aria-hidden="true" loading="lazy" decoding="async" />
+            <div class="card-tint"></div>
+            <div class="card-grad"></div>
+          </div>
+          <div class="card-back">
+            <div class="card-content">
+              <span class="card-eyebrow">The Inner Engine</span>
+              <div class="card-title">Absolute Intelligence</div>
+              <p class="card-body">Before a single post goes live, we sit with you. We pull out your real story, voice, and point of view — the things you say in conversation but never on camera.</p>
+              <span class="card-pill">Brand Strategy</span>
+            </div>
+          </div>
+        </div>
+        <div class="split-card" id="splitCard2">
+          <div class="card-front">
+            <img class="card-img" src="https://res.cloudinary.com/dden4hawr/image/upload/v1780897623/Second_Card_ibkgfi.png" alt="" aria-hidden="true" loading="lazy" decoding="async" />
+            <div class="card-tint"></div>
+            <div class="card-grad"></div>
+          </div>
+          <div class="card-back">
+            <div class="card-content">
+              <span class="card-eyebrow">The Outer Engine</span>
+              <div class="card-title">Artificial Intelligence</div>
+              <p class="card-body">One conversation with you turns into a month of content. One video becomes ten cuts. One idea becomes a campaign — while you stay in your craft.</p>
+              <span class="card-pill">Content Systems</span>
+            </div>
+          </div>
+        </div>
+        <div class="split-card" id="splitCard3">
+          <div class="card-front">
+            <img class="card-img" src="https://res.cloudinary.com/dden4hawr/image/upload/v1780897623/Third_Card_dhssnj.png" alt="" aria-hidden="true" loading="lazy" decoding="async" />
+            <div class="card-tint"></div>
+            <div class="card-grad"></div>
+          </div>
+          <div class="card-back">
+            <div class="card-content">
+              <span class="card-eyebrow">The Result</span>
+              <div class="card-title">Authority at Scale</div>
+              <p class="card-body">10M+ organic views. 50+ brands built. 12+ years in the craft. Your offline reputation, finally visible to the people who need to find you.</p>
+              <span class="card-pill">Scale &amp; Growth</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="split-content">
+        <p>We extract your real voice once, then let an AI-augmented system multiply it across every channel — so your authority compounds while you stay focused on the work that only you can do.</p>
+        <div class="split-meta"><span>Voice</span><span>System</span><span>Scale</span></div>
+      </div>
+      <div class="split-progress"><span id="splitProgressBar"></span></div>
+    </div>
+  </div>
+</section>
+
+<section id="problem">
+  <div class="wrap">
+    <div class="stage-col">
+    <div class="label-row" data-reveal><span class="line"></span><span class="eyebrow">Sound Familiar?</span></div>
+    <h2 data-reveal-clip>Everyone says you should be online. Nobody tells you how to do it without sounding like <span class="italic">everyone else.</span></h2>
+    <div class="pain-grid">
+      <div class="pain" data-reveal><span class="num">i.</span><h3>You're respected in your field — but invisible online.</h3><p>Your patients refer you. Your clients trust you. Your peers know your name. But when someone Googles you, there's barely a footprint. Meanwhile, juniors with half your experience are getting the leads.</p></div>
+      <div class="pain" data-reveal><span class="num">ii.</span><h3>You've tried posting — and it felt like shouting into a void.</h3><p>Maybe an agency built you a logo. Maybe a nephew runs your Instagram. Maybe you've recorded a few videos and abandoned them. Nothing compounds. Nothing converts. And it all feels off-brand.</p></div>
+      <div class="pain" data-reveal><span class="num">iii.</span><h3>You don't want to become a content creator. You want to be known.</h3><p>You don't have time to make reels every day. You don't want to dance for the algorithm. You want a system that works while you work — one that sounds like you, looks like your stature, and brings in the clients you actually want.</p></div>
+    </div>
+    <p class="closing" data-reveal>That's exactly what we build.</p>
+    </div>
+  </div>
+</section>
+
+<section id="approach">
+  <div class="wrap">
+    <div class="stage-col">
+    <div class="label-row" data-reveal><span class="line"></span><span class="eyebrow">Our Approach</span></div>
+    <h2 data-reveal-clip>Two things most agencies <span class="italic">miss.</span></h2>
+    <p class="lead" data-reveal style="margin-top:24px">Online authority isn't built by posting more. It's built by combining two things almost no one combines properly — deep clarity about who you are, and systems that scale that clarity everywhere. We do both, under one roof.</p>
+    <div class="pillars">
+      <div class="pillar" data-reveal>
+        <span class="num">i.</span>
+        <div class="label">The Inner Engine</div>
+        <h3>Absolute Intelligence</h3>
+        <p>Before we shoot a single video or write a single post, we sit with you. We pull out your real story, your real voice, your real point of view — the things you say in conversation but never on camera. This becomes the foundation. Everything we build after this sounds unmistakably like you.</p>
+        <ul>
+          <li>Founder clarity intensives</li>
+          <li>Story and positioning architecture</li>
+          <li>Conscious brand archetype</li>
+          <li>Voice and narrative system</li>
+        </ul>
+      </div>
+      <div class="pillar" data-reveal>
+        <span class="num">ii.</span>
+        <div class="label">The Outer Engine</div>
+        <h3>Artificial Intelligence</h3>
+        <p>Once we have your voice, we use AI to multiply it. One conversation with you turns into a month of content. One video becomes ten cuts. One idea becomes a campaign. You stay focused on your craft. The system handles the visibility.</p>
+        <ul>
+          <li>AI-augmented content workflows</li>
+          <li>Multi-platform distribution systems</li>
+          <li>Repurposing &amp; scheduling infrastructure</li>
+          <li>Analytics and iteration loops</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="label-row" data-reveal><span class="line"></span><span class="eyebrow">What We Do</span></div>
+    <h2 data-reveal-clip style="max-width:24ch">Four kinds of work. One studio that does all of it <span class="italic">well.</span></h2>
+    <p class="lead" data-reveal style="margin-top:24px">Most clients come to us in one of four situations. Find yours below — and you'll find exactly what we'd build for you, what's included, and what to expect. We work as a strategic partner, not a vendor.</p>
+    <div class="services" id="servicesList"></div>
+    <p class="pre-cta" data-reveal>Most clients come to us thinking they need one thing — and leave the discovery call clearer about what they actually need.</p>
+  </div>
+</section>
+
+<section id="results">
+  <div class="wrap">
+    <div class="label-row" data-reveal><span class="line"></span><span class="eyebrow">What This Looks Like in Practice</span></div>
+    <h2 data-reveal-clip style="max-width:18ch">Real brands. Real founders. <span class="italic">Real results.</span></h2>
+    <p class="lead" data-reveal style="margin-top:24px">We don't take on more than a handful of clients each quarter — which means every engagement gets the founder's attention, and the work shows it.</p>
+  </div>
+  <div class="cases-track" id="casesTrack"></div>
+</section>
+
+<section id="founder">
+  <div class="wrap">
+    <div class="label-row" data-reveal><span class="line"></span><span class="eyebrow">Founder</span></div>
+    <h2 data-reveal-clip style="max-width:20ch">The strategist behind every brand we <span class="italic">build.</span></h2>
+    <div class="founder-grid">
+      <div class="founder-portrait" data-reveal>
+        <img class="portrait-img" src="https://res.cloudinary.com/dden4hawr/image/upload/v1780903399/Woman_in_posh_office_202606081252_tjbh6p.jpg" alt="Niveditha Peddi" />
+        <div class="name-card">
+          <div class="n">Niveditha Peddi</div>
+          <div class="r">Who Runs This Studio</div>
+        </div>
+      </div>
+      <div class="founder-bio" data-reveal>
+        <p>Most agencies pass you to a junior after the pitch. WOW! Global doesn't. Every engagement is led by Niveditha personally — because the work is too important to delegate, and because that's the only way the studio has built its reputation over the last twelve years.</p>
+        <p>She's a brand strategist with a Gold-Medalist MBA in Entrepreneurship, an IDEX Global Fellow, and a Jagriti Yatra alumna. She's also a certified Art of Living teacher who has guided thousands across South India in clarity, focus, and resilience — the same depth she brings to every founder she works with.</p>
+        <p>It's an unusual combination. It's also the reason her clients don't sound like everyone else online.</p>
+        <div class="quote">"The brands that win the next decade will be the ones whose founders did the inner work first. AI without clarity just scales the noise."</div>
+        <div class="creds">
+          <div class="cred"><div class="t">MBA</div><div class="d">Gold Medalist Entrepreneurship · 2015</div></div>
+          <div class="cred"><div class="t">Fellow</div><div class="d">IDEX Global Fellowship · 2013</div></div>
+          <div class="cred"><div class="t">Alumna</div><div class="d">Jagriti Yatra</div></div>
+          <div class="cred"><div class="t">Teacher</div><div class="d">Certified Art of Living</div></div>
+        </div>
+        <div class="offer">
+          <div class="name">The Alignment Reset™</div>
+          <p>A 90-minute private intensive with Niveditha before any engagement begins. We map your brand clarity, identify positioning gaps, and leave you with a strategic foundation — whether you work with us or not.</p>
+          <a href="#contact" class="btn btn-primary">Book a Discovery Call <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="label-row" data-reveal><span class="line"></span><span class="eyebrow">Questions We Get a Lot</span></div>
+    <h2 data-reveal-clip style="max-width:18ch">The things <span class="italic">everyone wonders.</span></h2>
+    <div class="faq" id="faqList"></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <span class="eyebrow" data-reveal>Ready When You Are</span>
+    <h2 data-reveal-clip>Let's turn your offline reputation into <span class="italic">online authority.</span></h2>
+    <p class="lead" data-reveal>We take on a small number of partners each quarter — by design. If you've built something worth scaling, and you're ready to be known online the way you're already known offline, let's talk. The first conversation is free. No pitch deck. Just a real conversation.</p>
+    <a href="mailto:hello@wowglobal.studio?subject=Discovery%20Call" class="btn btn-primary" data-reveal>Book a Discovery Call <span class="arrow">→</span></a>
+    <div class="note" data-reveal>Currently booking engagements for Q3 2026</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="brand"><img src="https://res.cloudinary.com/dden4hawr/image/upload/v1780893081/download_rgsk6e.jpg" alt="WOW! Global"/><span><b>WOW!</b> <span class="accent">Global</span></span></div>
+      <div class="foot-links">
+        <a href="mailto:hello@wowglobal.studio">hello@wowglobal.studio</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 WOW! Global · Branding · Strategy · Content · Video<span class="tag">Made with Absolute &amp; Artificial Intelligence</span></div>
+  </div>
+</footer>
+
+<script>
+  // Content injection
+  const SERVICES = [
+    {n:'i.',t:'Brand Refresh & Redesign',s:"For established businesses whose identity hasn't kept up with their reputation.",b:"You've built something real. The clients trust you, the revenue is steady, the name is known. But the logo was designed in 1998. The website hasn't been touched in years. The packaging looks like it belongs to a different decade. We rebuild it, end to end, to 2026 standards — without losing the equity you've already earned.",i:"Brand audit · Logo redesign · Identity system · Typography & brand guidelines · Packaging · Website · Launch plan",bf:"Legacy businesses · Family-run brands · Established clinics, retailers, manufacturers",e:"8–12 weeks"},
+    {n:'ii.',t:'Launch a New Brand from Zero',s:"For founders building something new who want it done right the first time.",b:"You've got the idea. You know who you want to serve. But the brand doesn't exist yet — and you don't want to build it twice. We name it, position it, design it, and launch it. No cutting corners. No lorem ipsum. The kind of brand that earns trust on first contact.",i:"Name & positioning · Brand identity · Website · Launch content · Social profile setup",bf:"First-time founders · Clinic launches · D2C product brands · Professional service firms",e:"6–10 weeks"},
+    {n:'iii.',t:'Social Media & Content, Done For You',s:"For established experts who want a consistent online presence — without doing it themselves.",b:"We extract your voice in one session. We build a month of content from it. We post, engage, and iterate — and you stay completely out of the weeds. Every piece sounds like you. Every platform gets handled.",i:"Voice extraction · Content calendar · Writing & design · Posting & scheduling · Monthly reporting",bf:"Doctors · Lawyers · Coaches · Consultants · Founders who want presence without performance",e:"Monthly retainer"},
+    {n:'iv.',t:'Founder Films & Brand Assets',s:"For leaders who need the kind of video and photography that makes people stop scrolling.",b:"From brand films to founder stories to product videos — we conceptualise, script, shoot, and edit. No vague briefs. No stock footage. No forgettable output. The kind of visual identity work that people notice, share, and remember.",i:"Concept & script · Director's brief · Shoot day(s) · Post-production · Delivery in all formats",bf:"Brand launches · Fundraising decks · Conference keynotes · High-stakes first impressions",e:"Project-based"},
+  ];
+  const CASES = [
+    {c:'Anantha Rehab',s:'Strategy · Website · Films · Launch',h:'A wellness rehab brand engineered to feel like a sanctuary.',b:'We named it, positioned it, designed it, filmed it, and launched it. The kind of digital presence that makes a referral feel inevitable — and a first impression feel intentional.',t:['End-to-end engagement']},
+    {c:'Dr. Kishore Karumuri',s:'Personal Branding · Founder Videos',h:'10M+ organic views for a leading orthopedic surgeon.',b:'We turned a respected surgeon into one of the most-watched medical voices in the region — without him having to learn a single thing about content.',t:['10M+ Views']},
+    {c:'Launch Film Client',s:'Launch Film · Brand Narrative',h:'A 5-minute launch film that left the room in goosebumps.',b:'The kind of video founders text us about a year later, saying "this is still the best thing about our brand."',t:[]},
+    {c:'F&B Brand',s:'Packaging · Brand Identity',h:'Lipsmackingly good — packaged with intent.',b:'A food brand that went from home kitchen to retail shelf — with packaging that punched above its category and a story that made buyers remember it.',t:[]},
+    {c:'Heritage Brand',s:'Brand Refresh · Strategy',h:'Heritage craft, regally re-introduced.',b:'A legacy brand with decades of goodwill — refreshed to feel contemporary without losing an ounce of the trust it had earned.',t:[]},
+  ];
+  const FAQS = [
+    {q:"How is this different from hiring an agency or a freelancer?",a:"Agencies sell you hours. Freelancers sell you tasks. We sell you a system — strategy, content, and assets that compound for years after we're done. We also work with very few clients at a time, so the founder is always in the room."},
+    {q:"I don't want to become an influencer. Can you still help me?",a:"That's exactly who we work with. Our clients are doctors, lawyers, founders, and legacy brand owners — people who want authority, not virality. We build presence that brings clients to you. You don't have to perform for it."},
+    {q:"How much time will this take from me?",a:"Less than you think. Most clients spend 2–4 hours a month with us once the system is built — usually one strategy call and one content session. We handle everything else."},
+    {q:"You mention AI a lot. Will my brand sound generic?",a:"The opposite. AI is what we use after we've extracted your voice — to scale it, not replace it. Every piece of content is rooted in your actual words, your actual worldview. AI makes it faster and more consistent. It doesn't make it sound like anyone else."},
+    {q:"What's the investment?",a:"It depends on scope. Project-based engagements start at ₹1.5L. Retainers are custom-quoted based on what we're building together. We'll give you a clear number on the discovery call — no vague ranges, no hidden extras."},
+    {q:"How do we start?",a:"Book a discovery call. It's free, it's 30 minutes, and it's a real conversation — not a pitch. We'll figure out together if this makes sense. If it does, we'll walk you through what the engagement looks like and get started."},
+  ];
+
+  // Inject services
+  document.getElementById('servicesList').innerHTML = SERVICES.map((s,i)=>`
+    <div class="svc" data-svc="${i}" data-reveal>
+      <div class="svc-head">
+        <span class="num">${s.n}</span>
+        <div>
+          <h3>${s.t}</h3>
+          <div class="sub">${s.s}</div>
+        </div>
+        <div class="svc-toggle">+</div>
+      </div>
+      <div class="svc-body"><div class="svc-body-inner">
+        <p>${s.b}</p>
+        <div class="svc-meta">
+          <div><div class="k">Includes</div><div class="v">${s.i}</div></div>
+          <div><div class="k">Best For</div><div class="v">${s.bf}</div></div>
+          <div><div class="k">Engagement</div><div class="v">${s.e}</div></div>
+        </div>
+      </div></div>
+    </div>`).join('');
+
+  // Inject cases
+  document.getElementById('casesTrack').innerHTML = CASES.map(c=>`
+    <div class="case">
+      <div class="services">${c.s}</div>
+      <div class="client">${c.c}</div>
+      <h3>${c.h}</h3>
+      <p>${c.b}</p>
+      ${c.t.length?`<div class="tags">${c.t.map(x=>`<span class="tag">${x}</span>`).join('')}</div>`:''}
+    </div>`).join('');
+
+  // Inject FAQs
+  document.getElementById('faqList').innerHTML = FAQS.map((f,i)=>`
+    <div class="faq-item" data-faq="${i}" data-reveal>
+      <div class="faq-q">${f.q}<span class="ico"></span></div>
+      <div class="faq-a"><p>${f.a}</p></div>
+    </div>`).join('');
+
+  // Services accordion
+  document.querySelectorAll('.svc').forEach(el=>{
+    el.addEventListener('click',()=>el.classList.toggle('open'));
+  });
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(el=>{
+    el.addEventListener('click',()=>el.classList.toggle('open'));
+  });
+
+  // Nav
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll',()=>{
+    nav.classList.toggle('scrolled', window.scrollY > 30);
+  });
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click',()=>navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+
+  // Marquee inject (built so each label is a flat span with its own ✦ separator)
+  (function(){
+    const labels = ['Healthcare','Wellness','Legal','F&B','Retail','Hospitality','Beauty','Finance','Architecture','Education'];
+    const track = document.getElementById('mqTrack');
+    if(track){
+      const html = labels.map(l=>`<span>${l}</span>`).join('');
+      track.innerHTML = html + html;
+    }
+  })();
+
+  // Stat in-view (for underline reveal)
+  const _statObs = new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.4});
+  document.querySelectorAll('.stat').forEach(s=>_statObs.observe(s));
+
+  // Show drag hint once hero canvas exists & hide after first interaction
+  if(matchMedia('(hover:hover) and (pointer:fine)').matches){
+    document.body.classList.add('show-drag-hint');
+    const hide = ()=>document.body.classList.remove('show-drag-hint');
+    setTimeout(hide, 6500);
+    window.addEventListener('pointerdown', hide, {once:true});
+  }
+
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+</script>
+
+<!-- GSAP + ScrollTrigger + Lenis (CDN) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+<script>
+  if (!reduced) {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Lenis smooth scroll
+    const lenis = new Lenis({lerp:.09, smoothWheel:true});
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add((t)=>lenis.raf(t*1000));
+    gsap.ticker.lagSmoothing(0);
+
+    // Internal anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',(e)=>{
+        const id = a.getAttribute('href');
+        if(id.length>1 && document.querySelector(id)){
+          e.preventDefault();
+          lenis.scrollTo(id, {offset:-60, duration:1.4});
+        }
+      });
+    });
+
+    // Hero entrance
+    const heroTL = gsap.timeline({defaults:{ease:'power3.out'}});
+    heroTL.to('#hero [data-reveal]', {opacity:1, y:0, duration:.9, stagger:.12, delay:.2})
+          .to('#hero [data-reveal-clip]', {opacity:1, clipPath:'inset(0 0 0% 0)', duration:1.1, ease:'power4.out'}, .3);
+
+    // General reveals
+    gsap.utils.toArray('section:not(#hero) [data-reveal]').forEach(el=>{
+      gsap.to(el, {opacity:1, y:0, duration:.9, ease:'power3.out',
+        scrollTrigger:{trigger:el, start:'top 85%'}});
+    });
+    gsap.utils.toArray('section:not(#hero) [data-reveal-clip]').forEach(el=>{
+      gsap.to(el, {opacity:1, clipPath:'inset(0 0 0% 0)', duration:1.1, ease:'power4.out',
+        scrollTrigger:{trigger:el, start:'top 85%'}});
+    });
+
+    // Count-up
+    document.querySelectorAll('[data-count]').forEach(el=>{
+      const target = parseFloat(el.dataset.count);
+      const suffix = el.dataset.suffix || '';
+      const obj = {v:0};
+      ScrollTrigger.create({
+        trigger:el, start:'top 85%',
+        onEnter:()=>gsap.to(obj,{v:target, duration:2, ease:'power2.out',
+          onUpdate:()=>el.textContent = Math.round(obj.v) + suffix})
+      });
+    });
+
+    // Magnetic CTA buttons
+    document.querySelectorAll('.btn').forEach(btn=>{
+      btn.addEventListener('mousemove',(e)=>{
+        const r = btn.getBoundingClientRect();
+        const x = e.clientX - r.left - r.width/2;
+        const y = e.clientY - r.top - r.height/2;
+        gsap.to(btn,{x:x*.18, y:y*.25, duration:.45, ease:'power3.out'});
+      });
+      btn.addEventListener('mouseleave',()=>gsap.to(btn,{x:0,y:0,duration:.6,ease:'elastic.out(1,.5)'}));
+    });
+
+    // ====== Custom cursor (fine pointer only) ======
+    if(matchMedia('(hover:hover) and (pointer:fine)').matches){
+      document.documentElement.classList.add('has-cursor');
+      const dot = document.querySelector('.cursor-dot');
+      const ring = document.querySelector('.cursor-ring');
+      const m = {x:innerWidth/2,y:innerHeight/2};
+      const r = {x:m.x,y:m.y};
+      window.addEventListener('pointermove',e=>{m.x=e.clientX;m.y=e.clientY;dot.style.transform=`translate(${m.x}px,${m.y}px) translate(-50%,-50%)`});
+      (function loop(){r.x+=(m.x-r.x)*.18;r.y+=(m.y-r.y)*.18;ring.style.transform=`translate(${r.x}px,${r.y}px) translate(-50%,-50%)`;requestAnimationFrame(loop)})();
+      document.querySelectorAll('a,button,.svc,.faq-item,.case,.pillar,#hero-canvas').forEach(el=>{
+        el.addEventListener('mouseenter',()=>ring.classList.add('hover'));
+        el.addEventListener('mouseleave',()=>ring.classList.remove('hover'));
+      });
+    }
+
+    // ====== Pillar spotlight follow ======
+    document.querySelectorAll('.pillar').forEach(p=>{
+      p.addEventListener('pointermove',e=>{
+        const r = p.getBoundingClientRect();
+        p.style.setProperty('--mx',((e.clientX-r.left)/r.width*100)+'%');
+        p.style.setProperty('--my',((e.clientY-r.top)/r.height*100)+'%');
+      });
+    });
+
+    // ====== Case-card 3D tilt ======
+    document.querySelectorAll('.case').forEach(card=>{
+      card.addEventListener('pointermove',e=>{
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX-r.left)/r.width - .5;
+        const y = (e.clientY-r.top)/r.height - .5;
+        gsap.to(card,{rotationY:x*8, rotationX:-y*8, transformPerspective:900, transformOrigin:'center', duration:.5, ease:'power3.out'});
+      });
+      card.addEventListener('pointerleave',()=>{
+        gsap.to(card,{rotationY:0,rotationX:0,duration:.8,ease:'elastic.out(1,.5)'});
+      });
+    });
+
+    // ===== SPLIT REVEAL — expand (0-25%) → separate at 35% → flip at 70% =====
+    (function(){
+      const splitHost = document.querySelector('.split-host');
+      if(!splitHost) return;
+      const container   = document.getElementById('cardContainer');
+      const card1       = document.getElementById('splitCard1');
+      const card2       = document.getElementById('splitCard2');
+      const card3       = document.getElementById('splitCard3');
+      const eyebrowRow  = document.querySelector('.split-eyebrow-row');
+      const progressBar = document.getElementById('splitProgressBar');
+
+      // State flags — animations fire once per threshold crossing (and reverse cleanly)
+      let isGapAnimationCompleted  = false;
+      let isFlipAnimationCompleted = false;
+
+      const mm = gsap.matchMedia();
+      mm.add('(min-width: 721px)', () => {
+        const mapRange = gsap.utils.mapRange;
+        const clamp    = gsap.utils.clamp;
+
+        const st = ScrollTrigger.create({
+          trigger: splitHost,
+          start: 'top top',
+          end: '+=500%',
+          scrub: 1,
+          pin: '.split-pin',
+          anticipatePin: 1,
+          invalidateOnRefresh: true,
+          onUpdate(self){
+            const p = self.progress;
+
+            // 0 → 0.25  container width expands 30vw → 90vw (continuous)
+            if(p <= 0.25){
+              const w = mapRange(0, 0.25, 30, 90)(p);
+              container.style.width = clamp(30, 90, w) + 'vw';
+            } else {
+              container.style.width = '90vw';
+            }
+
+            // 0.10 → 0.25  eyebrow + headline slide up + fade in (continuous)
+            if(p < 0.10){
+              gsap.set(eyebrowRow, { opacity: 0, y: -30 });
+            } else if(p <= 0.25){
+              const eo = mapRange(0.10, 0.25, 0, 1)(p);
+              const ey = mapRange(0.10, 0.25, -30, 0)(p);
+              gsap.set(eyebrowRow, { opacity: clamp(0,1,eo), y: clamp(-30,0,ey) });
+            } else {
+              gsap.set(eyebrowRow, { opacity: 1, y: 0 });
+            }
+
+            // At 0.35 — separation + shape (one-shot, reversible via flag)
+            if(p >= 0.35 && !isGapAnimationCompleted){
+              isGapAnimationCompleted = true;
+              gsap.to(container, { gap: 28, duration: 0.6, ease: 'power3.out', overwrite: 'auto' });
+              gsap.to(card1, { borderTopRightRadius: 16, borderBottomRightRadius: 16, duration: 0.6, ease: 'power3.out', overwrite: 'auto' });
+              gsap.to(card2, { borderRadius: 16, duration: 0.6, ease: 'power3.out', overwrite: 'auto' });
+              gsap.to(card3, { borderTopLeftRadius: 16, borderBottomLeftRadius: 16, duration: 0.6, ease: 'power3.out', overwrite: 'auto' });
+            } else if(p < 0.35 && isGapAnimationCompleted){
+              isGapAnimationCompleted = false;
+              gsap.to(container, { gap: 0, duration: 0.5, ease: 'power3.out', overwrite: 'auto' });
+              gsap.to(card1, { borderTopRightRadius: 0, borderBottomRightRadius: 0, duration: 0.5, ease: 'power3.out', overwrite: 'auto' });
+              gsap.to(card2, { borderRadius: 0, duration: 0.5, ease: 'power3.out', overwrite: 'auto' });
+              gsap.to(card3, { borderTopLeftRadius: 0, borderBottomLeftRadius: 0, duration: 0.5, ease: 'power3.out', overwrite: 'auto' });
+            }
+
+            // At 0.70 — 3D flip with stagger + outer-card sway (one-shot, reversible)
+            if(p >= 0.70 && !isFlipAnimationCompleted){
+              isFlipAnimationCompleted = true;
+              gsap.to(card1, { rotationY: 180, y: 22, rotationZ: -4, transformPerspective: 2200, duration: 1.0, ease: 'power3.inOut', delay: 0.00, overwrite: 'auto' });
+              gsap.to(card2, { rotationY: 180,                    transformPerspective: 2200, duration: 1.0, ease: 'power3.inOut', delay: 0.10, overwrite: 'auto' });
+              gsap.to(card3, { rotationY: 180, y: 22, rotationZ:  4, transformPerspective: 2200, duration: 1.0, ease: 'power3.inOut', delay: 0.20, overwrite: 'auto' });
+            } else if(p < 0.70 && isFlipAnimationCompleted){
+              isFlipAnimationCompleted = false;
+              gsap.to(card3, { rotationY: 0, y: 0, rotationZ: 0, duration: 0.9, ease: 'power3.inOut', delay: 0.00, overwrite: 'auto' });
+              gsap.to(card2, { rotationY: 0,                      duration: 0.9, ease: 'power3.inOut', delay: 0.10, overwrite: 'auto' });
+              gsap.to(card1, { rotationY: 0, y: 0, rotationZ: 0, duration: 0.9, ease: 'power3.inOut', delay: 0.20, overwrite: 'auto' });
+            }
+
+            if (progressBar) progressBar.style.width = (p * 100).toFixed(2) + '%';
+          }
+        });
+
+        const onResize = () => ScrollTrigger.refresh();
+        window.addEventListener('resize', onResize);
+        return () => { st.kill(); window.removeEventListener('resize', onResize); };
+      });
+    })();
+  } else {
+    document.querySelectorAll('[data-reveal],[data-reveal-clip]').forEach(el=>{
+      el.style.opacity=1; el.style.transform='none'; el.style.clipPath='none';
+    });
+    document.querySelectorAll('[data-count]').forEach(el=>{
+      el.textContent = el.dataset.count + (el.dataset.suffix||'');
+    });
+  }
+</script>
+
+<!-- Three.js — Hero Fibonacci spiral -->
+<script type="module">
+  import * as THREE from 'https://esm.sh/three@0.160.0';
+  import { EffectComposer } from 'https://esm.sh/three@0.160.0/examples/jsm/postprocessing/EffectComposer.js';
+  import { RenderPass } from 'https://esm.sh/three@0.160.0/examples/jsm/postprocessing/RenderPass.js';
+  import { UnrealBloomPass } from 'https://esm.sh/three@0.160.0/examples/jsm/postprocessing/UnrealBloomPass.js';
+
+  const canvas = document.getElementById('hero-canvas');
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isMobile = window.innerWidth < 768;
+
+  const renderer = new THREE.WebGLRenderer({canvas, alpha:true, antialias:true});
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.05;
+
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100);
+  camera.position.set(0, 0, 7.2);
+
+  // Lights
+  scene.add(new THREE.AmbientLight(0x2a2f6a, 1.2));
+  const key = new THREE.DirectionalLight(0xf5e6a8, 2.4);
+  key.position.set(3, 4, 5);
+  scene.add(key);
+  const rim = new THREE.DirectionalLight(0x6a78ff, 1.0);
+  rim.position.set(-4, -2, -3);
+  scene.add(rim);
+  const orbLight = new THREE.PointLight(0xffd76a, 3.2, 8, 1.6);
+  scene.add(orbLight);
+
+  // Build a Fibonacci/logarithmic spiral curve, sampled as 3D points
+  function fibSpiralCurve(turns, startRadius, growth, zOffset=0, phase=0){
+    const pts = [];
+    const N = 420;
+    const totalAngle = turns * Math.PI * 2;
+    for(let i=0;i<=N;i++){
+      const t = i/N;
+      const a = t * totalAngle + phase;
+      const r = startRadius * Math.pow(growth, t*turns);
+      const x = Math.cos(a) * r;
+      const y = Math.sin(a) * r;
+      const z = zOffset + Math.sin(t*Math.PI) * 0.15;
+      pts.push(new THREE.Vector3(x,y,z));
+    }
+    return new THREE.CatmullRomCurve3(pts);
+  }
+
+  const group = new THREE.Group();
+  scene.add(group);
+
+  const ribbonCount = isMobile ? 2 : 3;
+  const ribbons = [];
+  const ribbonMat = new THREE.MeshPhysicalMaterial({
+    color: 0x1a1f4a,
+    metalness: 0.85,
+    roughness: 0.22,
+    clearcoat: 0.8,
+    clearcoatRoughness: 0.25,
+    sheen: 1.0,
+    sheenColor: new THREE.Color(0xc9a84c),
+    sheenRoughness: 0.4,
+    emissive: 0x0a0e2e,
+    emissiveIntensity: 0.4,
+  });
+  const goldEdge = new THREE.MeshStandardMaterial({
+    color: 0xc9a84c, metalness: 1, roughness: 0.18,
+    emissive: 0xc9a84c, emissiveIntensity: 0.3,
+  });
+
+  for(let r=0;r<ribbonCount;r++){
+    const curve = fibSpiralCurve(2.4 - r*0.18, 0.18 + r*0.06, 1.618, -r*0.08, r * Math.PI * 0.35);
+    const tubeSeg = isMobile ? 240 : 380;
+    const geo = new THREE.TubeGeometry(curve, tubeSeg, 0.085 + r*0.018, 18, false);
+    // Taper width by scaling positions in local Z is tough; instead use radius variation via shader-like trick: rebuild with FrenetFrames? keep simple TubeGeometry.
+    const mesh = new THREE.Mesh(geo, ribbonMat);
+    group.add(mesh);
+
+    // Gold edge highlight = thin tube alongside
+    const edgeGeo = new THREE.TubeGeometry(curve, tubeSeg, 0.022, 10, false);
+    const edge = new THREE.Mesh(edgeGeo, goldEdge);
+    group.add(edge);
+
+    ribbons.push({mesh, edge, phase: r * 0.4});
+  }
+
+  // Central glowing orb
+  const orbGeo = new THREE.SphereGeometry(0.28, 32, 32);
+  const orbMat = new THREE.MeshBasicMaterial({color: 0xffd76a});
+  const orb = new THREE.Mesh(orbGeo, orbMat);
+  group.add(orb);
+
+  // Glow sprite
+  const spriteCanvas = document.createElement('canvas');
+  spriteCanvas.width = spriteCanvas.height = 256;
+  const ctx = spriteCanvas.getContext('2d');
+  const grad = ctx.createRadialGradient(128,128,0,128,128,128);
+  grad.addColorStop(0,'rgba(255,215,106,1)');
+  grad.addColorStop(0.3,'rgba(255,200,80,0.4)');
+  grad.addColorStop(1,'rgba(255,200,80,0)');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0,0,256,256);
+  const glowTex = new THREE.CanvasTexture(spriteCanvas);
+  const glowMat = new THREE.SpriteMaterial({map: glowTex, transparent:true, blending:THREE.AdditiveBlending});
+  const glow = new THREE.Sprite(glowMat);
+  glow.scale.set(3.6, 3.6, 1);
+  group.add(glow);
+
+  // Background star/dust particles
+  const dustGeo = new THREE.BufferGeometry();
+  const dustCount = isMobile ? 200 : 500;
+  const positions = new Float32Array(dustCount*3);
+  for(let i=0;i<dustCount;i++){
+    positions[i*3]   = (Math.random()-.5)*16;
+    positions[i*3+1] = (Math.random()-.5)*12;
+    positions[i*3+2] = -2 - Math.random()*8;
+  }
+  dustGeo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+  const dust = new THREE.Points(dustGeo, new THREE.PointsMaterial({
+    color: 0xc9a84c, size: 0.025, transparent:true, opacity:.5, blending:THREE.AdditiveBlending
+  }));
+  scene.add(dust);
+
+  // Composer with bloom
+  let composer;
+  if(!reduced){
+    composer = new EffectComposer(renderer);
+    composer.addPass(new RenderPass(scene, camera));
+    const bloom = new UnrealBloomPass(new THREE.Vector2(1,1), 0.85, 0.95, 0.18);
+    composer.addPass(bloom);
+  }
+
+  // Sizing — fixed full viewport
+  function resize(){
+    const w = window.innerWidth, h = window.innerHeight;
+    renderer.setSize(w, h, false);
+    camera.aspect = w/h;
+    camera.updateProjectionMatrix();
+    if(composer){ composer.setSize(w, h); }
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  // Pointer parallax (passive ambient movement)
+  const target = {x:0, y:0};
+  const current = {x:0, y:0};
+  window.addEventListener('pointermove',(e)=>{
+    target.x = (e.clientX / window.innerWidth - 0.5) * 0.6;
+    target.y = (e.clientY / window.innerHeight - 0.5) * 0.4;
+  });
+
+  // ===== Direct drag interaction on the 3D object =====
+  // Drag adds inertial spin on top of the scroll-driven rotation.
+  // Click (no drag) triggers a "pulse" — bloom + scale punch.
+  const dragRot = {x:0, y:0};        // user-applied extra rotation
+  const dragVel = {x:0, y:0};        // velocity for inertia
+  let dragging = false, downX=0, downY=0, lastX=0, lastY=0, moved=0, downAt=0;
+  let pulse = 0;                     // 0..1 transient pulse on click
+
+  canvas.addEventListener('pointerdown', e=>{
+    if(document.body.classList.contains('stage-done')) return;
+    dragging = true; moved = 0; downAt = performance.now();
+    downX = lastX = e.clientX; downY = lastY = e.clientY;
+    canvas.classList.add('dragging');
+    canvas.setPointerCapture?.(e.pointerId);
+  });
+  canvas.addEventListener('pointermove', e=>{
+    if(!dragging) return;
+    const dx = e.clientX - lastX, dy = e.clientY - lastY;
+    lastX = e.clientX; lastY = e.clientY;
+    moved += Math.abs(dx) + Math.abs(dy);
+    dragVel.y = dx * 0.004;
+    dragVel.x = dy * 0.004;
+    dragRot.y += dragVel.y;
+    dragRot.x += dragVel.x;
+  });
+  function endDrag(e){
+    if(!dragging) return;
+    dragging = false;
+    canvas.classList.remove('dragging');
+    // Click (small movement, quick) => pulse burst
+    if(moved < 6 && performance.now() - downAt < 300){
+      pulse = 1;
+    }
+  }
+  canvas.addEventListener('pointerup', endDrag);
+  canvas.addEventListener('pointercancel', endDrag);
+  canvas.addEventListener('pointerleave', endDrag);
+
+  // Scroll-driven journey across Hero → Problem → Approach.
+  // Within the stage, the spiral traces a path: right (hero) → center-low
+  // (problem) → left (approach) — while rotating, scaling and unwinding.
+  // After the stage ends, it fades out and the body releases the canvas.
+  const heroEl    = document.getElementById('hero');
+  const problemEl = document.getElementById('problem');
+  const approachEl= document.getElementById('approach');
+  let stageProg = 0;   // 0 → 1 across the entire stage
+  let postFade  = 0;   // 0 → 1 once we leave the stage
+  function updateScroll(){
+    const stageStart = 0;
+    const stageEnd   = approachEl.offsetTop + approachEl.offsetHeight - window.innerHeight * 0.6;
+    const y = window.scrollY;
+    stageProg = Math.min(1, Math.max(0, (y - stageStart) / Math.max(1, stageEnd - stageStart)));
+    const fadeStart = stageEnd;
+    const fadeEnd   = stageEnd + window.innerHeight * 0.5;
+    postFade = Math.min(1, Math.max(0, (y - fadeStart) / Math.max(1, fadeEnd - fadeStart)));
+    document.body.classList.toggle('stage-done', postFade >= 0.98);
+  }
+  window.addEventListener('scroll', updateScroll, {passive:true});
+  updateScroll();
+
+  // Smoothed scroll value for buttery movement
+  let sp = 0;
+  const lerp = (a,b,t)=>a+(b-a)*t;
+
+  const clock = new THREE.Clock();
+  function animate(){
+    const t = clock.getElapsedTime();
+    sp = lerp(sp, stageProg, 0.08);
+
+    // Layout path — desktop vs mobile
+    const desktop = window.innerWidth >= 900;
+    // 3 waypoints across the stage: hero (right), problem (lower-center), approach (left)
+    // Use piecewise interpolation for nicer feel.
+    let px, py, pz, baseScale;
+    if(desktop){
+      // x: +2.6 → +0.4 → -2.4
+      // y: +0.4 → -0.6 → +0.2
+      if(sp < 0.5){
+        const k = sp/0.5;
+        px = lerp(3.0, 0.4, k);
+        py = lerp(0.4, -0.6, k);
+      } else {
+        const k = (sp-0.5)/0.5;
+        px = lerp(0.4, -2.4, k);
+        py = lerp(-0.6, 0.2, k);
+      }
+      pz = lerp(0, -1.2, sp);
+      baseScale = lerp(1.45, 1.85, sp);
+    } else {
+      px = 0;
+      py = lerp(1.6, -1.6, sp);   // drifts downward as you scroll
+      pz = lerp(0, -1.0, sp);
+      baseScale = lerp(1.1, 1.45, sp);
+    }
+    group.position.set(px, py, pz);
+
+    if(!reduced){
+      // Apply inertial decay to drag velocity (when not dragging)
+      if(!dragging){
+        dragVel.x *= 0.94; dragVel.y *= 0.94;
+        dragRot.x += dragVel.x; dragRot.y += dragVel.y;
+        // Gentle return to neutral over time so the spiral doesn't stay tilted forever
+        dragRot.x *= 0.992; dragRot.y *= 0.992;
+      }
+      // Continuous rotation + extra rotation driven by scroll progress
+      group.rotation.z = t * 0.08 + sp * Math.PI * 1.4;
+      ribbons.forEach((r)=>{
+        r.mesh.rotation.z = Math.sin(t*0.3 + r.phase) * 0.05;
+      });
+      // Pointer parallax (damped) layered on top
+      current.x += (target.x - current.x) * 0.05;
+      current.y += (target.y - current.y) * 0.05;
+      group.rotation.y = current.x * 0.6 + sp * 0.4 + dragRot.y;
+      group.rotation.x = -current.y * 0.4 - sp * 0.2 + dragRot.x;
+      dust.rotation.z = t * 0.01;
+    }
+
+    // Click-pulse decay (transient bloom/scale punch)
+    pulse *= 0.92;
+    const pulseScale = 1 + pulse * 0.18;
+
+    // Scale + post-stage fade
+    const fade = 1 - postFade;
+    group.scale.setScalar(baseScale * pulseScale);
+    ribbons.forEach(r=>{
+      r.mesh.material.transparent = true;
+      r.edge.material.transparent = true;
+      r.mesh.material.opacity = fade;
+      r.edge.material.opacity = fade;
+      r.mesh.material.emissiveIntensity = 0.4 + pulse * 1.4;
+    });
+    glow.material.opacity = fade;
+    orb.material.transparent = true;
+    orb.material.opacity = fade;
+    dust.material.opacity = 0.5 * fade;
+
+    // Orb pulse (breathing) + click pulse stacked
+    const breathe = 1 + Math.sin(t*2.2) * 0.08;
+    orb.scale.setScalar(breathe * (1 + pulse*0.6));
+    glow.scale.setScalar(3.6 * breathe * (1 + pulse*0.8));
+    orbLight.intensity = (3.0 + Math.sin(t*2.2)*0.6 + pulse*4) * fade;
+
+    // Pause rendering entirely once fully faded for perf
+    if(postFade < 0.99){
+      if(composer && !reduced) composer.render();
+      else renderer.render(scene, camera);
+    }
+    requestAnimationFrame(animate);
+  }
+  animate();
+</script>
+
+</body>
+</html>
